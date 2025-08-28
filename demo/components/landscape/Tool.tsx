@@ -10,7 +10,7 @@ export function Tool({ tool }: { tool: LandscapeTool }) {
       rel="noopener noreferrer"
       className=""
     >
-      <div className="flex flex-col items-center p-2 gap-0.5 hover:bg-violet-100 rounded-lg">
+      <div className="flex flex-col items-center p-2 gap-0.5 hover:bg-violet-100 rounded-lg hover:translate-y-[-2px] transition-all duration-300 hover:shadow-lg">
         {/* Tool Logo */}
         <div className="">
           {tool.logo ? (

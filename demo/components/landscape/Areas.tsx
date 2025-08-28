@@ -13,9 +13,9 @@ export function Areas({ data }: AreasProps) {
   return (
     <div className="w-full mx-auto">
       {/* Organize areas in a grid */}
-      <div className="grid grid-cols-2 gap-4 auto-rows-auto">
+      <div className="grid grid-cols-3 gap-4 auto-rows-auto">
         {/* Area developer-control-plane */}
-        <div className="col-span-2 border border-violet-400 border-dashed bg-violet-50 p-4">
+        <div className="col-span-3 border border-violet-400 border-dashed bg-violet-50 p-4">
           <div className="flex gap-8 items-center">
             <p className="text-sm font-bold w-24">
               {getAreaById("developer-control-plane")?.name}
@@ -32,7 +32,7 @@ export function Areas({ data }: AreasProps) {
         </div>
 
         {/* Area integration-delivery-plane */}
-        <div className="border border-violet-400 border-dashed bg-violet-50 p-4">
+        <div className="col-span-2 border border-violet-400 border-dashed bg-violet-50 p-4">
           <div className="flex gap-8 items-center">
             <p className="text-sm font-bold w-24">
               {getAreaById("integration-delivery-plane")?.name}
@@ -49,7 +49,7 @@ export function Areas({ data }: AreasProps) {
         </div>
 
         {/* Area resource-plane */}
-        <div className="row-span-3 border border-violet-400 border-dashed bg-violet-50 p-4">
+        <div className="col-span-1 row-span-3 border border-violet-400 border-dashed bg-violet-50 p-4">
           <div className="flex flex-col gap-4">
             <div className="w-full mx-auto">
               <p className="text-sm font-bold text-center">
@@ -68,7 +68,7 @@ export function Areas({ data }: AreasProps) {
         </div>
 
         {/* Area observability-plane */}
-        <div className="border border-violet-400 border-dashed bg-violet-50 p-4">
+        <div className="col-span-2 border border-violet-400 border-dashed bg-violet-50 p-4">
           <div className="flex gap-8 items-center">
             <p className="text-sm font-bold w-24">
               {getAreaById("observability-plane")?.name}
@@ -85,7 +85,7 @@ export function Areas({ data }: AreasProps) {
         </div>
 
         {/* Area security-plane */}
-        <div className="border border-violet-400 border-dashed bg-violet-50 p-4">
+        <div className="col-span-2 border border-violet-400 border-dashed bg-violet-50 p-4">
           <div className="flex gap-8 items-center">
             <p className="text-sm font-bold w-24">
               {getAreaById("security-plane")?.name}

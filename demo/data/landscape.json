@@ -32,24 +32,6 @@
               "status": "active"
             },
             {
-              "id": "camunda",
-              "name": "Camunda",
-              "description": "Description 2",
-              "logo": "/logos/camunda.png",
-              "url": "https://example.com",
-              "tags": ["tag1", "tag2"],
-              "status": "active"
-            },
-            {
-              "id": "sap",
-              "name": "SAP",
-              "description": "Description 2",
-              "logo": "/logos/sap.svg",
-              "url": "https://example.com",
-              "tags": ["tag1", "tag2"],
-              "status": "active"
-            },
-            {
               "id": "snow",
               "name": "Snow",
               "description": "Description 2",
@@ -82,6 +64,15 @@
               "url": "https://example.com",
               "tags": ["tag1", "tag2"],
               "status": "active"
+            },
+            {
+              "id": "notion",
+              "name": "Notion",
+              "description": "Description 3",
+              "logo": "/logos/notion.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
             }
           ]
         },
@@ -104,6 +95,15 @@
               "name": "Sharepoint",
               "description": "Description 3",
               "logo": "/logos/sharepoint.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "notion",
+              "name": "Notion",
+              "description": "Description 3",
+              "logo": "/logos/notion.png",
               "url": "https://example.com",
               "tags": ["tag1", "tag2"],
               "status": "active"
@@ -138,6 +138,15 @@
               "name": "Gitlab",
               "description": "Description 3",
               "logo": "/logos/gitlab.svg",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "notion",
+              "name": "Notion",
+              "description": "Description 3",
+              "logo": "/logos/notion.png",
               "url": "https://example.com",
               "tags": ["tag1", "tag2"],
               "status": "active"
@@ -236,6 +245,20 @@
                   "url": "https://example.com",
                   "tags": ["tag1", "tag2"],
                   "status": "active"
+                },
+                {
+                  "id": "dot-net",
+                  "name": ".NET",
+                  "description": "Description 3",
+                  "logo": "/logos/dot-net.png",
+                  "url": "https://example.com"
+                },
+                {
+                  "id": "php",
+                  "name": "PHP",
+                  "description": "Description 3",
+                  "logo": "/logos/php.svg",
+                  "url": "https://example.com"
                 }
               ]
             },
@@ -290,14 +313,219 @@
       "id": "integration-delivery-plane",
       "categories": [
         {
-          "id": "integration-delivery-plane-category-1",
-          "name": "Category 1",
+          "id": "ci-pipeline",
+          "name": "CI Pipeline",
           "description": "Description 1",
           "tools": [
             {
-              "id": "tool-1",
-              "name": "Tool 1",
-              "description": "Description 1"
+              "id": "gitlab-ci",
+              "name": "Gitlab CI",
+              "description": "Description 1",
+              "logo": "/logos/gitlab.svg",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "github-actions",
+              "name": "Github Actions",
+              "description": "Description 1",
+              "logo": "/logos/github-actions.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "jenkins",
+              "name": "Jenkins",
+              "description": "Description 1",
+              "logo": "/logos/jenkins.svg",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "sonar",
+              "name": "SonarQube",
+              "description": "Description 1",
+              "logo": "/logos/sonarqube.svg",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "renovate",
+              "name": "Renovate",
+              "description": "Description 1",
+              "logo": "/logos/renovate.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "commitizen",
+              "name": "Commitizen",
+              "description": "Description 1",
+              "logo": "/logos/commitizen.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "dependabot",
+              "name": "Dependabot",
+              "description": "Description 1",
+              "logo": "/logos/dependabot.svg",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "camunda",
+              "name": "Camunda",
+              "description": "Description 1",
+              "logo": "/logos/camunda.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "id": "image-registry",
+          "name": "Image Registry",
+          "description": "Description 1",
+          "tools": [
+            {
+              "id": "harbor",
+              "name": "Harbor",
+              "description": "Description 1",
+              "logo": "/logos/harbor.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "docker",
+              "name": "Docker",
+              "description": "Description 1",
+              "logo": "/logos/docker.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "jfrog",
+              "name": "JFrog",
+              "description": "Description 1",
+              "logo": "/logos/jfrog.svg",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "aws-ecr",
+              "name": "AWS ECR",
+              "description": "Description 1",
+              "logo": "/logos/aws-ecr.svg",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "azure-acr",
+              "name": "Azure ACR",
+              "description": "Description 1",
+              "logo": "/logos/azure-acr.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "gcp-gcr",
+              "name": "GCP GCR",
+              "description": "Description 1",
+              "logo": "/logos/gcp-gcr.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "id": "platform-orchestrator",
+          "name": "Platform Orchestrator",
+          "description": "Description 1",
+          "tools": [
+            {
+              "id": "crossplane",
+              "name": "Crossplane",
+              "description": "Description 1",
+              "logo": "/logos/crossplane.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "kratix",
+              "name": "Kratix",
+              "description": "Description 1",
+              "logo": "/logos/kratix.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "humanitec",
+              "name": "Humanitec",
+              "description": "Description 1",
+              "logo": "/logos/humanitec.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "id": "cd-tools",
+          "name": "CD Tools",
+          "description": "Description 1",
+          "tools": [
+            {
+              "id": "argocd",
+              "name": "ArgoCD",
+              "description": "Description 1",
+              "logo": "/logos/argocd.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "flux-cd",
+              "name": "Flux CD",
+              "description": "Description 1",
+              "logo": "/logos/flux-cd.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "github-actions",
+              "name": "Github Actions",
+              "description": "Description 1",
+              "logo": "/logos/github-actions.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "gitlab-cd",
+              "name": "Gitlab CD",
+              "description": "Description 1",
+              "logo": "/logos/gitlab.svg",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
             }
           ]
         }
@@ -308,13 +536,221 @@
       "categories": [
         {
           "id": "observability-plane-category-1",
-          "name": "Category 1",
+          "name": "Observability",
           "description": "Description 1",
           "tools": [
             {
-              "id": "tool-1",
-              "name": "Tool 1",
-              "description": "Description 1"
+              "id": "prometheus",
+              "name": "Prometheus",
+              "description": "Description 1",
+              "logo": "/logos/prometheus.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "grafana",
+              "name": "Grafana",
+              "description": "Description 1",
+              "logo": "/logos/grafana.svg",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "dynatrace",
+              "name": "Dynatrace",
+              "description": "Description 1",
+              "logo": "/logos/dynatrace.svg",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "datadog",
+              "name": "Datadog",
+              "description": "Description 1",
+              "logo": "/logos/datadog.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "victoria-metrics",
+              "name": "Victoria Metrics",
+              "description": "Description 1",
+              "logo": "/logos/victoria-metrics.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "elastic",
+              "name": "Elastic",
+              "description": "Description 1",
+              "logo": "/logos/elastic.svg",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "security-plane",
+      "categories": [
+        {
+          "id": "secret-management",
+          "name": "Secret Management",
+          "description": "Description 1",
+          "tools": [
+            {
+              "id": "vault",
+              "name": "Vault",
+              "description": "Description 1",
+              "logo": "/logos/vault.svg",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "infisical",
+              "name": "Infisical",
+              "description": "Description 1",
+              "logo": "/logos/infisical.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "aws-secrets-manager",
+              "name": "AWS Secrets Manager",
+              "description": "Description 1",
+              "logo": "/logos/aws-secrets-manager.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "azure-key-vault",
+              "name": "Azure Key Vault",
+              "description": "Description 1",
+              "logo": "/logos/azure-key-vault.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "gcp-secret-manager",
+              "name": "GCP Secret Manager",
+              "description": "Description 1",
+              "logo": "/logos/gcp-secret-manager.svg",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "id": "code-analysis",
+          "name": "Code Analysis",
+          "description": "Description 1",
+          "tools": [
+            {
+              "id": "sonar",
+              "name": "SonarQube",
+              "description": "Description 1",
+              "logo": "/logos/sonarqube.svg",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "aqua-security",
+              "name": "Aqua Security",
+              "description": "Description 1",
+              "logo": "/logos/aqua-security.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "fortify",
+              "name": "Fortify",
+              "description": "Description 1",
+              "logo": "/logos/fortify.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "checkov",
+              "name": "Checkov",
+              "description": "Description 1",
+              "logo": "/logos/checkov.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "snyk",
+              "name": "Snyk",
+              "description": "Description 1",
+              "logo": "/logos/snyk.jpeg",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "id": "network-based-security",
+          "name": "Network Based Security",
+          "description": "Description 1",
+          "tools": [
+            {
+              "id": "cilium",
+              "name": "Cilium",
+              "description": "Description 1",
+              "logo": "/logos/cilium.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "kube-armor",
+              "name": "Kube Armor",
+              "description": "Description 1",
+              "logo": "/logos/kube-armor.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "id": "policy",
+          "name": "Policy",
+          "description": "Description 1",
+          "tools": [
+            {
+              "id": "kyverno",
+              "name": "Kyverno",
+              "description": "Description 1",
+              "logo": "/logos/kyverno.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "open-policy-agent",
+              "name": "Open Policy Agent",
+              "description": "Description 1",
+              "logo": "/logos/open-policy-agent.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
             }
           ]
         }
@@ -324,14 +760,228 @@
       "id": "resource-plane",
       "categories": [
         {
-          "id": "security-plane-category-1",
-          "name": "Category 1",
+          "id": "compute",
+          "name": "Compute",
           "description": "Description 1",
           "tools": [
             {
-              "id": "tool-1",
-              "name": "Tool 1",
-              "description": "Description 1"
+              "id": "aws-eks",
+              "name": "EKS",
+              "description": "Description 1",
+              "logo": "/logos/aws-eks.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "azure-aks",
+              "name": "AKS",
+              "description": "Description 1",
+              "logo": "/logos/azure-aks.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "gcp-gke",
+              "name": "GKE",
+              "description": "Description 1",
+              "logo": "/logos/gcp-gke.svg",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "ovh-managed-kubernetes",
+              "name": "OVH",
+              "description": "Description 1",
+              "logo": "/logos/ovh-managed-k8s.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "vm",
+              "name": "VM",
+              "description": "Description 1",
+              "logo": "/logos/vm.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "vercel",
+              "name": "Vercel",
+              "description": "Description 1",
+              "logo": "/logos/vercel.svg",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            }
+          ],
+          "subcategories": [
+            {
+              "id": "cluster-management",
+              "name": "Cluster Management",
+              "description": "Description 1",
+              "tools": [
+                {
+                  "id": "rancher",
+                  "name": "Rancher",
+                  "description": "Description 1",
+                  "logo": "/logos/rancher.svg",
+                  "url": "https://example.com",
+                  "tags": ["tag1", "tag2"],
+                  "status": "active"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "data",
+          "name": "Data",
+          "description": "Description 1",
+          "tools": [
+            {
+              "id": "postgresql",
+              "name": "PostgreSQL",
+              "description": "Description 1",
+              "logo": "/logos/postgresql.svg",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "neon-db",
+              "name": "Neon",
+              "description": "Description 1",
+              "logo": "/logos/neon-db.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "mysql",
+              "name": "MySQL",
+              "description": "Description 1",
+              "logo": "/logos/mysql.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "mongodb",
+              "name": "MongoDB",
+              "description": "Description 1",
+              "logo": "/logos/mongodb.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "aws-s3",
+              "name": "AWS S3",
+              "description": "Description 1",
+              "logo": "/logos/aws-s3.svg",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "id": "networking",
+          "name": "Networking",
+          "description": "Description 1",
+          "tools": [
+            {
+              "id": "cilium",
+              "name": "Cilium",
+              "description": "Description 1",
+              "logo": "/logos/cilium.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "aws-route53",
+              "name": "Route 53",
+              "description": "Description 1",
+              "logo": "/logos/aws-route53.svg",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "google-cloud-dns",
+              "name": "Cloud DNS",
+              "description": "Description 1",
+              "logo": "/logos/gcp-cloud-dns.svg",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "azure-dns",
+              "name": "Azure DNS",
+              "description": "Description 1",
+              "logo": "/logos/azure-dns.jpeg",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "cloudflare",
+              "name": "Cloudflare",
+              "description": "Description 1",
+              "logo": "/logos/cloudflare.svg",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "soloio",
+              "name": "Solo.io",
+              "description": "Description 1",
+              "logo": "/logos/soloio.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "id": "services",
+          "name": "Services",
+          "description": "Description 1",
+          "tools": [
+            {
+              "id": "resend",
+              "name": "Resend",
+              "description": "Description 1",
+              "logo": "/logos/resend.svg",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "kafka",
+              "name": "Kafka",
+              "description": "Description 1",
+              "logo": "/logos/kafka.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "stripe",
+              "name": "Stripe",
+              "description": "Description 1",
+              "logo": "/logos/stripe.svg",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
             }
           ]
         }
