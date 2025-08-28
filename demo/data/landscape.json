@@ -14,10 +14,10 @@
           "description": "Description 1",
           "tools": [
             {
-              "id": "cycloid",
-              "name": "Cycloid",
+              "id": "getport",
+              "name": "Port",
               "description": "Description 1",
-              "logo": "https://example.com/logo.png",
+              "logo": "/logos/getport.jpeg",
               "url": "https://example.com",
               "tags": ["tag1", "tag2"],
               "status": "active"
@@ -26,7 +26,7 @@
               "id": "backstage",
               "name": "Backstage",
               "description": "Description 2",
-              "logo": "https://example.com/logo.png",
+              "logo": "/logos/backstage.png",
               "url": "https://example.com",
               "tags": ["tag1", "tag2"],
               "status": "active"
@@ -35,16 +35,16 @@
               "id": "camunda",
               "name": "Camunda",
               "description": "Description 2",
-              "logo": "https://example.com/logo.png",
+              "logo": "/logos/camunda.png",
               "url": "https://example.com",
               "tags": ["tag1", "tag2"],
               "status": "active"
             },
             {
-              "id": "idp",
-              "name": "IDM",
+              "id": "sap",
+              "name": "SAP",
               "description": "Description 2",
-              "logo": "https://example.com/logo.png",
+              "logo": "/logos/sap.svg",
               "url": "https://example.com",
               "tags": ["tag1", "tag2"],
               "status": "active"
@@ -53,13 +53,12 @@
               "id": "snow",
               "name": "Snow",
               "description": "Description 2",
-              "logo": "https://example.com/logo.png",
+              "logo": "/logos/snow.png",
               "url": "https://example.com",
               "tags": ["tag1", "tag2"],
               "status": "active"
             }
-          ],
-          "subcategories": []
+          ]
         },
         {
           "id": "project-management",
@@ -70,7 +69,7 @@
               "id": "jira",
               "name": "Jira",
               "description": "Description 3",
-              "logo": "https://example.com/logo.png",
+              "logo": "/logos/jira.svg",
               "url": "https://example.com",
               "tags": ["tag1", "tag2"],
               "status": "active"
@@ -79,13 +78,211 @@
               "id": "orchestra",
               "name": "Orchestra",
               "description": "Description 3",
-              "logo": "https://example.com/logo.png",
+              "logo": "/logos/orchestra.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "id": "communication",
+          "name": "Communication",
+          "description": "Description 2",
+          "tools": [
+            {
+              "id": "slack",
+              "name": "Slack",
+              "description": "Description 3",
+              "logo": "/logos/slack.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "sharepoint",
+              "name": "Sharepoint",
+              "description": "Description 3",
+              "logo": "/logos/sharepoint.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "id": "documentation",
+          "name": "Documentation",
+          "description": "Description 2",
+          "tools": [
+            {
+              "id": "confluence",
+              "name": "Confluence",
+              "description": "Description 3",
+              "logo": "/logos/confluence.svg",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "sharepoint",
+              "name": "Sharepoint",
+              "description": "Description 3",
+              "logo": "/logos/sharepoint.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "gitlab",
+              "name": "Gitlab",
+              "description": "Description 3",
+              "logo": "/logos/gitlab.svg",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "id": "version-control",
+          "name": "Version Control",
+          "description": "Description 2",
+          "tools": [
+            {
+              "id": "gitlab",
+              "name": "Gitlab",
+              "description": "Description 3",
+              "logo": "/logos/gitlab.svg",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "github",
+              "name": "Github",
+              "description": "Description 3",
+              "logo": "/logos/github.svg",
               "url": "https://example.com",
               "tags": ["tag1", "tag2"],
               "status": "active"
             }
           ],
-          "subcategories": []
+          "subcategories": [
+            {
+              "id": "application-source-code",
+              "name": "Application Source Code",
+              "description": "Description 2",
+              "tools": [
+                {
+                  "id": "typescript",
+                  "name": "Typescript",
+                  "description": "Description 3",
+                  "logo": "/logos/typescript.svg",
+                  "url": "https://example.com",
+                  "tags": ["tag1", "tag2"],
+                  "status": "active"
+                },
+                {
+                  "id": "go",
+                  "name": "Go",
+                  "description": "Description 3",
+                  "logo": "/logos/go.svg",
+                  "url": "https://example.com",
+                  "tags": ["tag1", "tag2"],
+                  "status": "active"
+                },
+                {
+                  "id": "javascript",
+                  "name": "Javascript",
+                  "description": "Description 3",
+                  "logo": "/logos/javascript.svg",
+                  "url": "https://example.com",
+                  "tags": ["tag1", "tag2"],
+                  "status": "active"
+                },
+                {
+                  "id": "kubernetes",
+                  "name": "Kubernetes",
+                  "description": "Description 3",
+                  "logo": "/logos/kubernetes.png",
+                  "url": "https://example.com",
+                  "tags": ["tag1", "tag2"],
+                  "status": "active"
+                },
+                {
+                  "id": "helm",
+                  "name": "Helm",
+                  "description": "Description 3",
+                  "logo": "/logos/helm.png",
+                  "url": "https://example.com",
+                  "tags": ["tag1", "tag2"],
+                  "status": "active"
+                },
+                {
+                  "id": "java",
+                  "name": "Java",
+                  "description": "Description 3",
+                  "logo": "/logos/java.svg",
+                  "url": "https://example.com",
+                  "tags": ["tag1", "tag2"],
+                  "status": "active"
+                },
+                {
+                  "id": "python",
+                  "name": "Python",
+                  "description": "Description 3",
+                  "logo": "/logos/python.png",
+                  "url": "https://example.com",
+                  "tags": ["tag1", "tag2"],
+                  "status": "active"
+                }
+              ]
+            },
+            {
+              "id": "infrastructure-source-code",
+              "name": "Infrastructure Source Code",
+              "description": "Description 2",
+              "tools": [
+                {
+                  "id": "terraform",
+                  "name": "Terraform",
+                  "description": "Description 3",
+                  "logo": "/logos/terraform.svg",
+                  "url": "https://example.com",
+                  "tags": ["tag1", "tag2"],
+                  "status": "active"
+                },
+                {
+                  "id": "terragrunt",
+                  "name": "Terragrunt",
+                  "description": "Description 3",
+                  "logo": "/logos/terragrunt.png",
+                  "url": "https://example.com",
+                  "tags": ["tag1", "tag2"],
+                  "status": "active"
+                },
+                {
+                  "id": "ansible",
+                  "name": "Ansible",
+                  "description": "Description 3",
+                  "logo": "/logos/ansible.svg",
+                  "url": "https://example.com",
+                  "tags": ["tag1", "tag2"],
+                  "status": "active"
+                },
+                {
+                  "id": "packer",
+                  "name": "Packer",
+                  "description": "Description 3",
+                  "logo": "/logos/packer.svg",
+                  "url": "https://example.com",
+                  "tags": ["tag1", "tag2"],
+                  "status": "active"
+                }
+              ]
+            }
+          ]
         }
       ]
     },

@@ -1,5 +1,6 @@
 import { LandscapeCategory } from "@/lib/landscape/types";
 import { Tool } from "./Tool";
+import { SubCategory } from "./SubCategory";
 
 interface CategoryProps {
   data: LandscapeCategory;
@@ -7,6 +8,7 @@ interface CategoryProps {
 
 export function Category({ data }: CategoryProps) {
   const category = data;
+  const subcategories = category.subcategories;
 
   if (category && category.tools.length > 0) {
     return (
@@ -17,12 +19,19 @@ export function Category({ data }: CategoryProps) {
         </div>
         {/* Tools */}
         <div className="p-2 rounded-b-md border border-violet-300  bg-white">
-          <ul className="flex flex-wrap gap-2 justify-center">
+          <ul className="flex flex-wrap gap-1 justify-center items-center">
             {category.tools.map((tool) => (
               <li key={tool.id}>
                 <Tool tool={tool} />
               </li>
             ))}
+            {subcategories &&
+              subcategories.length > 0 &&
+              subcategories.map((subcategory) => (
+                <li key={subcategory.id}>
+                  <SubCategory key={subcategory.id} data={subcategory} />
+                </li>
+              ))}
           </ul>
         </div>
       </div>
