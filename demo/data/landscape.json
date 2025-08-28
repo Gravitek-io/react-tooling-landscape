@@ -1,12 +1,144 @@
 {
   "metadata": {
-    "name": "Platform Engineering Tooling Landscape",
+    "name": "My Tooling Landscape",
     "version": "1.0.0",
     "lastUpdated": "2024-08-24"
   },
-  "areas": [
+  "areasContents": [
     {
-      "id": "developer-control-plane"
+      "id": "developer-control-plane",
+      "categories": [
+        {
+          "id": "developer-portal",
+          "name": "Developer Portal",
+          "description": "Description 1",
+          "tools": [
+            {
+              "id": "cycloid",
+              "name": "Cycloid",
+              "description": "Description 1",
+              "logo": "https://example.com/logo.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "backstage",
+              "name": "Backstage",
+              "description": "Description 2",
+              "logo": "https://example.com/logo.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "camunda",
+              "name": "Camunda",
+              "description": "Description 2",
+              "logo": "https://example.com/logo.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "idp",
+              "name": "IDM",
+              "description": "Description 2",
+              "logo": "https://example.com/logo.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "snow",
+              "name": "Snow",
+              "description": "Description 2",
+              "logo": "https://example.com/logo.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            }
+          ],
+          "subcategories": []
+        },
+        {
+          "id": "project-management",
+          "name": "Project Management",
+          "description": "Description 2",
+          "tools": [
+            {
+              "id": "jira",
+              "name": "Jira",
+              "description": "Description 3",
+              "logo": "https://example.com/logo.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            },
+            {
+              "id": "orchestra",
+              "name": "Orchestra",
+              "description": "Description 3",
+              "logo": "https://example.com/logo.png",
+              "url": "https://example.com",
+              "tags": ["tag1", "tag2"],
+              "status": "active"
+            }
+          ],
+          "subcategories": []
+        }
+      ]
+    },
+    {
+      "id": "integration-delivery-plane",
+      "categories": [
+        {
+          "id": "integration-delivery-plane-category-1",
+          "name": "Category 1",
+          "description": "Description 1",
+          "tools": [
+            {
+              "id": "tool-1",
+              "name": "Tool 1",
+              "description": "Description 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "observability-plane",
+      "categories": [
+        {
+          "id": "observability-plane-category-1",
+          "name": "Category 1",
+          "description": "Description 1",
+          "tools": [
+            {
+              "id": "tool-1",
+              "name": "Tool 1",
+              "description": "Description 1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resource-plane",
+      "categories": [
+        {
+          "id": "security-plane-category-1",
+          "name": "Category 1",
+          "description": "Description 1",
+          "tools": [
+            {
+              "id": "tool-1",
+              "name": "Tool 1",
+              "description": "Description 1"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

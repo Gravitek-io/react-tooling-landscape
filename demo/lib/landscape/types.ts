@@ -1,4 +1,4 @@
-export interface Tool {
+export interface LandscapeTool {
   id: string;
   name: string;
   description: string;
@@ -8,26 +8,30 @@ export interface Tool {
   status: "active" | "recommended" | "deprecated" | "beta";
 }
 
-export interface Category {
+export interface LandscapeCategory {
   id: string;
   name: string;
   description: string;
-  tools: Tool[];
-  subcategories: Subcategory[];
+  tools: LandscapeTool[];
+  subcategories: LandscapeSubcategory[];
 }
 
-export interface Subcategory {
+export interface LandscapeSubcategory {
   id: string;
   name: string;
   description: string;
-  tools: Tool[];
+  tools: LandscapeTool[];
 }
 
-export interface Area {
+export interface LandscapeAreaContent {
+  id: string;
+  categories: LandscapeCategory[];
+}
+
+export interface LandscapeArea {
   id: string;
   name: string;
   description: string;
-  categories: Category[];
 }
 
 export interface LandscapeMetadata {
@@ -38,5 +42,5 @@ export interface LandscapeMetadata {
 
 export interface LandscapeData {
   metadata: LandscapeMetadata;
-  areas: Area[];
+  areasContents: LandscapeAreaContent[];
 }

@@ -1,49 +1,41 @@
-import { Category } from "./types";
-
-export interface Area {
+export interface LandscapeArea {
   id: string;
   name: string;
   description: string;
-  categories: Category[];
 }
 
-export const landscapeAreas: Area[] = [
+export const landscapeAreas: LandscapeArea[] = [
   {
     id: "developer-control-plane",
     name: "Developer Control Plane",
     description: "",
-    categories: [],
   },
   {
     id: "integration-delivery-plane",
     name: "Integration & Delivery Plane",
     description: "",
-    categories: [],
   },
   {
     id: "observability-plane",
     name: "Observability Plane",
     description: "",
-    categories: [],
   },
   {
     id: "security-plane",
     name: "Security Plane",
     description: "",
-    categories: [],
   },
   {
     id: "resource-plane",
     name: "Resource Plane",
     description: "",
-    categories: [],
   },
 ];
 
-export function getAreaById(id: string): Area | undefined {
+export function getAreaById(id: string): LandscapeArea | undefined {
   return landscapeAreas.find((area) => area.id === id);
 }
 
-export function getAllAreas(): Area[] {
+export function getAllAreas(): LandscapeArea[] {
   return landscapeAreas;
 }
