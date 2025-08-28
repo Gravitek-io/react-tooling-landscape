@@ -1,0 +1,12 @@
+{
+  "metadata": {
+    "name": "Platform Engineering Tooling Landscape",
+    "version": "1.0.0",
+    "lastUpdated": "2024-08-24"
+  },
+  "areas": [
+    {
+      "id": "developer-control-plane"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Line clamp utilities */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Auto-fit grid for categories */
+.auto-fit-minmax-300 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+/* Responsive grid columns for tools - with display grid */
+.grid.grid-cols-1 { 
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr)); 
+}
+.grid.grid-cols-2 { 
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); 
+}
+.grid.grid-cols-3 { 
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); 
+}
+.grid.grid-cols-4 { 
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr)); 
+}
+.grid.grid-cols-5 { 
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr)); 
+}
+.grid.grid-cols-6 { 
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr)); 
+}
+
+/* Bento specific styles */
+.bento-area {
+  transition: all 0.3s ease;
+  break-inside: avoid;
+}
+
+.bento-area:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.bento-category {
+  transition: all 0.2s ease;
+}
+
+.bento-category:hover {
+  transform: scale(1.02);
+}
+
+/* Print styles for screenshot optimization */
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+}
