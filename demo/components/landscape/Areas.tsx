@@ -13,7 +13,7 @@ export function Areas({ data }: AreasProps) {
   return (
     <div className="w-full mx-auto">
       {/* Organize areas in a grid */}
-      <div className="grid grid-flow-row grid-cols-2 grid-rows-4 gap-4">
+      <div className="grid grid-cols-2 gap-4 auto-rows-auto">
         {/* Area developer-control-plane */}
         <div className="col-span-2 border border-violet-400 border-dashed bg-violet-50 p-4">
           <div className="flex gap-8 items-center">
