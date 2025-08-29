@@ -2,11 +2,15 @@
 
 An interactive React-based tooling landscape that transforms static platform engineering diagrams into dynamic, clickable interfaces. Perfect for platform teams who want to provide developers with an engaging way to explore their tooling ecosystem.
 
-![Tooling Landscape](./demo/public/tooling-landscape.png)
+![Tooling Landscape](./demo/public/tooling-landscape-graphic.png)
+
+![Tooling Landscape](./demo/public/tooling-landscape-list.png)
 
 ## ✨ Features
 
+- **Dual View Modes**: Switch between visual landscape and detailed list views
 - **Interactive Tool Display**: Click on any tool to learn more about it
+- **Advanced Search & Filtering**: Real-time search with filters by status, area, and category
 - **JSON-Driven Configuration**: Easy to customize and maintain
 - **Responsive Design**: Works seamlessly on desktop and mobile
 - **Modern Tech Stack**: Built with Next.js 15.5, React 19.1, and Tailwind CSS 4
@@ -53,18 +57,45 @@ npm run dev
 
 1. **Configure your landscape**: Edit `demo/data/landscape.json` with your tools and categories
 2. **Add tool logos**: Place SVG/PNG logos in `demo/public/logos/`
-3. **Customize styling**: Modify Tailwind classes in the components
-4. **Deploy**: Build and deploy the demo application
+3. **Choose your view**: Toggle between landscape view for visual overview or list view for detailed exploration
+4. **Search and filter**: Use the powerful search and filtering capabilities to find specific tools
+5. **Customize styling**: Modify Tailwind classes in the components
+6. **Deploy**: Build and deploy the demo application
 
 ## 📁 Project Structure
 
 ```
 ├── demo/                   # Demo Next.js application
+│   ├── app/               # Next.js App Router
 │   ├── components/
-│   │   ├── landscape/      # Reusable landscape components
+│   │   ├── landscape/     # Reusable landscape components
+│   │   │   ├── Landscape.tsx      # Main landscape view
+│   │   │   ├── ToolListView.tsx   # List view with search/filters
+│   │   │   ├── ToolCard.tsx       # Individual tool card
+│   │   │   ├── ToolSearchBar.tsx  # Search and filter controls
+│   │   │   ├── Areas.tsx          # Area containers
+│   │   │   ├── Category.tsx       # Category components
+│   │   │   ├── SubCategory.tsx    # Subcategory components
+│   │   │   └── Tool.tsx           # Tool display components
 │   │   └── demo/          # Demo-specific components
-│   ├── data/              # JSON configuration
-│   └── public/logos/      # Tool logos
+│   │       ├── DemoHeader.tsx     # Header with view toggle
+│   │       ├── DemoLandscape.tsx  # Landscape demo wrapper
+│   │       └── DemoList.tsx       # List demo wrapper
+│   ├── hooks/
+│   │   └── landscape/     # Reusable landscape hooks
+│   │       └── useToolSearch.ts   # Search and filter logic
+│   ├── lib/
+│   │   └── landscape/     # Core utilities and types
+│   │       ├── types.ts           # TypeScript interfaces
+│   │       ├── toolUtils.ts       # Tool extraction utilities
+│   │       ├── searchUtils.ts     # Search logic utilities
+│   │       ├── data.ts            # Data processing utilities
+│   │       └── areas.ts           # Area management utilities
+│   ├── data/
+│   │   └── landscape.json # Sample landscape configuration
+│   └── public/
+│       └── logos/         # Tool logos (SVG, PNG, JPEG)
+├── LICENSE                # Apache 2.0 license
 └── README.md             # This file
 ```
 

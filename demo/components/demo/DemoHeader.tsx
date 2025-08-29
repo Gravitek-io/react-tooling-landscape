@@ -1,9 +1,19 @@
 import Link from "next/link";
 
-export function DemoHeader() {
+export type ViewMode = "landscape" | "list";
+
+interface DemoHeaderProps {
+  currentView?: ViewMode;
+  onViewChange?: (view: ViewMode) => void;
+}
+
+export function DemoHeader({
+  currentView = "landscape",
+  onViewChange,
+}: DemoHeaderProps) {
   return (
     <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white">
-      <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-4">
         <div className="text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Platform Tooling Landscape
@@ -17,7 +27,8 @@ export function DemoHeader() {
             category, search by functionality, name or description.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          {/* Call to action */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Link
               href="https://github.com/Gravitek-io/react-tooling-landscape.git"
               target="_blank"
@@ -42,6 +53,62 @@ export function DemoHeader() {
               Learn More
             </Link>
           </div>
+
+          {/* View Toggle */}
+          {onViewChange && (
+            <div className="">
+              <div className="inline-flex bg-white/20 rounded-lg p-1">
+                <button
+                  onClick={() => onViewChange("landscape")}
+                  className={`inline-flex items-center px-4 py-2 text-sm font-medium rounded-md transition-colors ${
+                    currentView === "landscape"
+                      ? "bg-white text-blue-600 shadow-sm"
+                      : "text-white hover:bg-white/10"
+                  }`}
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="size-4 mr-2"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 0 1-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V10.125c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v8.25m-6.75 0V4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v14.25m2.25-14.25h5.25c.621 0 1.125.504 1.125 1.125v4.5m-5.25-4.5h3.75c.621 0 1.125.504 1.125 1.125v2.25m-3.75-2.25h1.5c.621 0 1.125.504 1.125 1.125v1.125M12 18.75h7.5m-7.5 0a1.125 1.125 0 0 1-1.125-1.125m7.5 0a1.125 1.125 0 0 0 1.125-1.125M12 18.75V4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v13.875"
+                    />
+                  </svg>
+                  Landscape
+                </button>
+                <button
+                  onClick={() => onViewChange("list")}
+                  className={`inline-flex items-center px-4 py-2 text-sm font-medium rounded-md transition-colors ${
+                    currentView === "list"
+                      ? "bg-white text-blue-600 shadow-sm"
+                      : "text-white hover:bg-white/10"
+                  }`}
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="size-4 mr-2"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM3.75 12h.007v.008H3.75V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm-.375 5.25h.007v.008H3.75v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                    />
+                  </svg>
+                  List
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>
