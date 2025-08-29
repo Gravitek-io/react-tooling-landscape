@@ -19,7 +19,7 @@ export function DemoHeader() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="https://github.com/Gravitek-io/react-tooling-landscape"
+              href="https://github.com/Gravitek-io/react-tooling-landscape.git"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-colors"
